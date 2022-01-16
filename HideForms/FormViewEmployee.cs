@@ -12,9 +12,12 @@ namespace HideForms
 {
     public partial class FormViewEmployee : Form
     {
-        public FormViewEmployee()
+        private readonly Employee employee;
+
+        public FormViewEmployee(Employee employee)
         {
             InitializeComponent();
+            this.employee = employee;
         }
     }
 }

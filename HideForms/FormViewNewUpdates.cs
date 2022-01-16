@@ -12,12 +12,14 @@ namespace HideForms
 {
     public partial class FormViewNewUpdates : Form
     {
+        private readonly Employee employee;
         private readonly Form parent;
         private readonly List<Form> formsToClose;
 
-        public FormViewNewUpdates(Form parent, List<Form> formsToClose)
+        public FormViewNewUpdates(Employee employee, Form parent, List<Form> formsToClose)
         {
             InitializeComponent();
+            this.employee = employee;
             this.parent = parent;
             this.formsToClose = formsToClose;
             
